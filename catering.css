@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+    --dark-green: #0e534b;
+    --green: #06D6A0;
+    --yellow: #FFD166;
+    --light-color: #cbfff0;
+    --orange: #f08922;
+}
+
+.pricing-table-container {
+    font-family: "Poppins", sans-serif;
+    margin-top: 7vw;
+    box-shadow: #000;
+}
+
+.pricing-table-container .pricing-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pricing-table-container h2 {
+    margin-right: 30px;
+    font-size: 24px;
+}
+
+.pricing-table-container .plans-switch {
+    width: 250px;
+    background: var(--dark-green);
+    height: 55px;
+    appearance: none;
+    border-radius: 24px;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.pricing-table-container .plans-switch-container {
+    position: relative;
+    color: #fff;
+    display: inline-block;
+}
+
+.pricing-table-container .plans-switch-container .monthly {
+    position: absolute;
+    left: 36px;
+    top: 18px;
+    pointer-events: none;
+}
+
+.pricing-table-container .plans-switch-container .yearly {
+    position: absolute;
+    right: 36px;
+    top: 18px;
+    pointer-events: none;
+}
+
+.pricing-table-container .plans-switch::before {
+    content: "";
+    position: absolute;
+    height: 44px;
+    width: 120px;
+    border-radius: 24px;
+    background: var(--green);
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6px;
+    transition: all 0.5s;
+}
+
+.pricing-table-container .plans-switch:checked::before {
+    left: 138px;
+    width: 106px;
+}
+
+
+.pricing-table {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+
+.pricing-table .table {
+    background: var(--light-color);
+    width: 260px;
+    padding: 32px;
+    position: relative;
+}
+
+.pricing-table h3 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pricing-table .price-container {
+    display: flex;
+    align-items: center;
+}
+
+.pricing-table .price-container .price {
+    font-size: 56px;
+    font-weight: bold;
+    padding-right: 16px;
+}
+
+.pricing-table .description {
+    font-size: 15px;
+    color: #222;
+}
+
+.pricing-table .features {
+    list-style: none;
+    padding: 0;
+}
+
+.pricing-table .features li {
+    margin: 24px 0;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-table .features li::before {
+    content: url('/assets/images/check-icon.svg');
+    margin-right: 16px;
+    margin-top: 4px;
+}
+
+.pricing-table a.btn-plan {
+    background: var(--dark-green);
+    padding: 16px 0;
+    display: inline-block;
+    width: 100%;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 24px;
+    margin-top: 16px;
+    transition: all 400ms;
+}
+
+.pricing-table a.btn-plan:hover {
+    background: #022435;
+}
+
+
+.pricing-table .table img.table-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+.pricing-table .table .content {
+    z-index: 200;
+    position: relative;
+}
+
+
+.pricing-table .table.best-value {
+    background: var(--dark-green);
+    color: #fff;
+    border-radius: 24px;
+    width: 280px;
+}
+
+.pricing-table .table.table.best-value .value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 8px;
+    border-radius: 24px 24px 0 0;
+    background: var(--orange);
+    font-weight: bold;
+}
+
+.pricing-table .table.table.best-value .content {
+    padding-top: 32px;
+}
+
+.pricing-table .table.table.best-value .price {
+    font-size: 68px;
+}
+
+.pricing-table .table.table.best-value a.btn-plan {
+    background: var(--yellow);
+    color: #000;
+    transition: all 400ms;
+}
+
+.pricing-table .table.table.best-value a.btn-plan:hover {
+    background: #ffe4a4;
+} 
+
+.pricing-table .table.best-value .description {
+    color: #eee;
+}

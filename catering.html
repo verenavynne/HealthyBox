@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Box</title>
+    <!-- for icons  -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <!-- bootstrap  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- for swiper slider  -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- fancy box  -->
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <!-- custom css  -->
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="catering.css">
+    
+</head>
+
+<body class="body-fixed">
+    <!-- start of header  -->
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2">
+                    <div class="header-logo">
+                        <a href="index.html">
+                            <img src="logo.png" width="220" height="41" alt="Logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-10">
+                    <div class="main-navigation">
+                        <button class="menu-toggle"><span></span><span></span></button>
+                        <nav class="header-menu">
+                            <ul class="menu food-nav-menu">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="#about">About</a></li>
+                                <li><a href="#menu">Menu</a></li>
+                                <li><a href="#gallery">Gallery</a></li>
+                                <li><a href="#blog">Blog</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="catering.html">Catering</a></li>
+                            </ul>
+                        </nav>
+                        <div class="header-right">
+                            <form action="#" class="header-search-form for-des">
+                                <input type="search" class="form-input" placeholder="Search Here...">
+                                <button type="submit">
+                                    <i class="uil uil-search"></i>
+                                </button>
+                            </form>
+                                <div class="mini_cart_wrapper">
+                                    <a href="javascript:void(0)" class="header-btn header-cart">
+                                        <i class="uil uil-shopping-bag"></i>
+                                        <span class="cart-number">2</span>
+                                    </a>
+                                    <div class="mini_cart mini_cart2">
+                                        <div class="cart_gallery">
+                                            <div class="cart_item">
+                                                <div class="cart_img">
+                                                    <a href="#">
+                                                        <img src="images/cart1.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="cart_info">
+                                                    <a href="#">
+                                                        Grilled Chicken
+                                                    </a>
+                                                    <p><span>Rp. 30.000,00</span> X 1</p>
+                                                </div>
+                                                <div class="cart_remove">
+                                                    <a href="#"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </div>
+                                            <div class="cart_item">
+                                                <div class="cart_img">
+                                                    <a href="#">
+                                                        <img src="images/cart2.png" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="cart_info">
+                                                    <a href="#">
+                                                        Panner Noodles
+                                                    </a>
+                                                    <p><span>Rp. 55.000,00</span> X 1</p>
+                                                </div>
+                                                <div class="cart_remove">
+                                                    <a href="#"><i class="fa fa-times"></i></a>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="mini_cart_table">
+                                            <div class="cart_table_border">
+                                                <div class="cart_total">
+                                                    <span>Sub Total :</span>
+                                                    <span class="price">Rp. 85.000,00</span>
+
+                                                </div>
+                                                <div class="cart_total mt-10">
+                                                    <span>Total + Tax :</span>
+                                                    <span class="price">Rp. 90.000,00</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mini_cart_footer">
+                                            <div class="cart_button">
+                                                <a href="#">View Cart</a>
+                                            </div>
+                                            <div class="cart_button">
+                                                <a href="#">Checkout</a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            <a href="javascript:void(0)" class="header-btn">
+                                <i class="uil uil-user-md btnLogin-popup nav-user-icon online" onclick="settingsMenuToggle()"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </header>
+    <!-- header ends  -->
+
+            <!-- Settings Menu -->
+            <div class="settings-menu">
+                <div class="settings-menu-inner">
+    
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>Ryayayaya</p>
+                            <a href="#">See your profile</a>
+                        </div>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="user-profile">
+                        <img src="images/feedback.png">
+                        <div>
+                            <p>Give Feedback</p>
+                            <a href="#">Help us to improve the new design</a>
+                        </div>
+                    </div>
+    
+                    <hr>
+    
+                    <div class="settings-links">
+                        <img src="/assets/images/setting.png" class="settings-icon">
+                        <a href="#">Settings & Privacy <img src="/assets/images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="/assets/images/help.png" class="settings-icon">
+                        <a href="#">Help & Support <img src="/assets/images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="/assets/images/display.png" class="settings-icon">
+                        <a href="#">Display & Accessibility <img src="/assets/images/arrow.png" width="10px"></a>
+                    </div>
+                    <div class="settings-links">
+                        <img src="/assets/images/logout.png" class="settings-icon">
+                        <a href="#">Logout <img src="/assets/images/arrow.png" width="10px"></a>
+                    </div>
+    
+                </div>
+    
+            </div>
+    <div class="wrapper">
+        <div class="icon-close"><span class="icon-close-i"></span></div>
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-mail"></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-password"></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Registration</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon-user"></span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-mail"></span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon-password"></span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label>
+                        <input type="checkbox"> I agree to the <a href="">terms & conditions</a>
+                    </label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    
+
+</body>
+<div>
+    <div class="pricing-table-container">
+
+        <div class="pricing-header">
+            <h2>Please choose a plan below</h2>
+
+            <div class="plans-switch-container">
+                <input type="checkbox" class="plans-switch">
+                <span class="monthly">Monthly</span>
+                <span class="yearly">Yearly</span>
+            </div>
+        </div>
+
+
+        <div class="pricing-table">
+            <div class="table">
+                <div class="content">
+                    <h3>Basic</h3>
+
+                    <div class="price-container">
+                        <span class="price basic-price">3Jt</span>
+                        <span class="plan-duration">/ month</span>
+                    </div>
+
+                    <div class="description">
+                        This plan is the best for individuals who are getting started
+                    </div>
+
+                    <ul class="features">
+                        <li>60 dishes</li>
+                        <li>2 special meals</li>
+                        <li>Email Support</li>
+                    </ul>
+
+                    <a href="#" class="btn-plan">Choose Plan</a>
+                </div>
+
+                <img class="table-bg" src="/assets/images/bg-shape1.svg" alt="">
+            </div>
+
+            <!-- End of basic plan -->
+
+
+            <div class="table best-value">
+
+                <span class="value">Best Value</span>
+
+                <div class="content">
+                    <h3>Professional</h3>
+
+                    <div class="price-container">
+                        <span class="price professional-price">5Jt</span>
+                        <span class="plan-duration">/ month</span>
+                    </div>
+
+                    <div class="description">
+                        This plan is for businesses that are getting started
+                    </div>
+
+                    <ul class="features">
+                        <li>90 dishes</li>
+                        <li>10 Special Meals</li>
+                        <li>Phone Support</li>
+                    </ul>
+
+                    <a href="#" class="btn-plan">Choose Plan</a>
+                </div>
+
+                <img class="table-bg" src="/assets/images/bg-shape2.svg" alt="">
+            </div>
+
+            <!-- End of Professional Plan -->
+
+
+            <div class="table">
+                <div class="content">
+                    <h3>Business</h3>
+
+                    <div class="price-container">
+                        <span class="price business-price">10Jt</span>
+                        <span class="plan-duration">/ month</span>
+                    </div>
+
+                    <div class="description">
+                        This plan is the best for large businesses
+                    </div>
+
+                    <ul class="features">
+                        <li>180 dishes</li>
+                        <li>30 Special Meals</li>
+                        <li>Phone Support</li>
+                    </ul>
+
+                    <a href="#" class="btn-plan">Choose Plan</a>
+                </div>
+
+                <img class="table-bg" src="/assets/images/bg-shape1.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="catering.js"></script>
+<script src="main.js"></script>
+</html>
